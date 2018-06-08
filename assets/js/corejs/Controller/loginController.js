@@ -34,21 +34,8 @@ app.controller('LoginCtrl', ['$scope', '$rootScope', '$stateParams', '$http', '$
 
     $rootScope.logout = function() {
         $cookies.put('userdata', '');
-        // $state.go('/login');
-        window.location.href="#/login";
-
-        /*data = {
-            authkey: $rootScope.userdata.authkey,
-        }
-        $http({
-            method: "post",
-            url: $rootScope.path + 'login/logout',
-            data: data
-        }).then(function mySucces(response) {
-            if (response.data) {
-                
-            }
-        });*/
+        $state.go('/login');
+        window.location.reload();
     }
 
 }]);
