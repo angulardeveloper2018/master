@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<base href="/divyesh-test/">
+
+	<link href="assets/css/angular-material-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/angular-material.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+
+	<script src="assets/js/angularjs/angular/angular.min.js"></script>
+	<script src="assets/js/angularjs/angular/angular-cookies.min.js"></script>
+	<script src="assets/js/angularjs/angular/angular-ui-router.min.js"></script>
+	<script src="assets/js/angularjs/angular/angular-animate.min.js"></script>
+	<script src="assets/js/angularjs/angular/angular-aria.min.js"></script>
+	<script src="assets/js/angularjs/angular/angular-messages.min.js"></script>
+	<script src="assets/js/angularjs/angular-material/svg-assets-cache.js"></script>
+	<script src="assets/js/angularjs/angular-material/angular-material.min.js"></script>
+
+	<!-- Core js -->
+	<script src="assets/js/corejs/app.js"></script>
+	<script src="assets/js/corejs/Service/services.js"></script>
+	<script src="assets/js/corejs/Controller/projectsController.js"></script>
+	<script src="assets/js/corejs/Controller/tasksController.js"></script>
+	<script src="assets/js/corejs/Controller/loginController.js"></script>
+
+</head>
+<body ng-app="TestApp">
+	<div class="mainHeader" ng-if="userdata.email">
+		<div class="header">
+			<div ng-if="userdata.first_name">
+				<md-button class="pull-right md-primary" ng-click="logout();" ng-controller="LoginCtrl">Logout</md-button>
+			</div>
+			<div class="welcomeSection">Welcome <strong>{{userdata.first_name}}</strong></div>
+		</div>
+	</div>
+	<div class="viewClass {{currentPage}}" ui-view> </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+2018-06-08 05:42:11 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/login/logout in D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#1 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('v1/login/logout', Array)
+#2 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\xampp\htdocs\divyesh-test\api\web\index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\divyesh-test\api\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2018-06-08 05:42:11 [::1][-][-][info][application] $_COOKIE = [
+    'userdata' => '{\"id\":1,\"authkey\":\"asdasdewrwedfgdfggghjgghj\",\"email\":\"test@gmail.com\",\"password\":\"e10adc3949ba59abbe56e057f20f883e\",\"first_name\":\"Test\",\"last_name\":\"User\",\"createddate\":null}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '39'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json;charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/divyesh-test/projects'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'userdata=%7B%22id%22%3A1%2C%22authkey%22%3A%22asdasdewrwedfgdfggghjgghj%22%2C%22email%22%3A%22test%40gmail.com%22%2C%22password%22%3A%22e10adc3949ba59abbe56e057f20f883e%22%2C%22first_name%22%3A%22Test%22%2C%22last_name%22%3A%22User%22%2C%22createddate%22%3Anull%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/divyesh-test/api/web/index.php'
+    'REMOTE_PORT' => '59919'
+    'REDIRECT_URL' => '/divyesh-test/api/web/v1/login/logout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/divyesh-test/api/web/v1/login/logout'
+    'SCRIPT_NAME' => '/divyesh-test/api/web/index.php'
+    'PHP_SELF' => '/divyesh-test/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528454531.842
+    'REQUEST_TIME' => 1528454531
+]
+2018-06-08 05:42:20 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/login/logout in D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#1 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('v1/login/logout', Array)
+#2 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\xampp\htdocs\divyesh-test\api\web\index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\divyesh-test\api\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2018-06-08 05:42:20 [::1][-][-][info][application] $_COOKIE = [
+    'userdata' => '{\"id\":1,\"authkey\":\"asdasdewrwedfgdfggghjgghj\",\"email\":\"test@gmail.com\",\"password\":\"e10adc3949ba59abbe56e057f20f883e\",\"first_name\":\"Test\",\"last_name\":\"User\",\"createddate\":null}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '39'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json;charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/divyesh-test/projects'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'userdata=%7B%22id%22%3A1%2C%22authkey%22%3A%22asdasdewrwedfgdfggghjgghj%22%2C%22email%22%3A%22test%40gmail.com%22%2C%22password%22%3A%22e10adc3949ba59abbe56e057f20f883e%22%2C%22first_name%22%3A%22Test%22%2C%22last_name%22%3A%22User%22%2C%22createddate%22%3Anull%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/divyesh-test/api/web/index.php'
+    'REMOTE_PORT' => '59960'
+    'REDIRECT_URL' => '/divyesh-test/api/web/v1/login/logout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/divyesh-test/api/web/v1/login/logout'
+    'SCRIPT_NAME' => '/divyesh-test/api/web/index.php'
+    'PHP_SELF' => '/divyesh-test/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528454540.699
+    'REQUEST_TIME' => 1528454540
+]
+2018-06-08 05:42:26 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/login/logout in D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#1 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('v1/login/logout', Array)
+#2 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\xampp\htdocs\divyesh-test\api\web\index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\xampp\htdocs\divyesh-test\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\divyesh-test\api\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2018-06-08 05:42:26 [::1][-][-][info][application] $_COOKIE = [
+    'userdata' => ''
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '39'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json;charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/divyesh-test/projects'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'userdata='
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/divyesh-test/api/web/index.php'
+    'REMOTE_PORT' => '59976'
+    'REDIRECT_URL' => '/divyesh-test/api/web/v1/login/logout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/divyesh-test/api/web/v1/login/logout'
+    'SCRIPT_NAME' => '/divyesh-test/api/web/index.php'
+    'PHP_SELF' => '/divyesh-test/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528454546.956
+    'REQUEST_TIME' => 1528454546
+]

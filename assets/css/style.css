@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+/*Start for boostrap*/
+.pull-right {
+	float: right;
+}
+.md-toolbar-tools {
+	display: block;
+    line-height: 64px;
+}
+.mt-10 {
+	margin-top: 10px !important;
+}
+.m-0 {
+	margin: 0px;
+}
+.text-center {
+	text-align: center;
+}
+.text-gray {
+	color: #BBBBBB;
+}
+/*End for boostrap*/
+
+
+
+
+.mainHeader {
+	height: 50px;
+}
+.header {
+	height: 50px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: 99;
+    background: #FFF;
+}
+.welcomeSection {
+	width: 200px;
+	text-align: right;
+	float: right;
+	vertical-align: middle;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.viewClass {
+	width: 80%;
+	margin: auto;	
+	background: #FFF;
+	margin-top: 20px;
+}
+md-content.md-default-theme, md-content {
+	background: #FFF;
+}
+.login {
+	width: 30%;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+	margin-top: 10%;
+}
+.errorMsg .md-toast-content {
+    background-color: #cc0505 !important;
+    color: #FFFFFF !important;
+}
+.successMsg .md-toast-content {
+	background-color: #1e9800 !important;
+    color: #FFFFFF !important;
+}

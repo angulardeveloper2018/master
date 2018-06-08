@@ -1,0 +1,16 @@
+<div layout="column">
+	<md-content layout-padding>
+	    <form name="projectForm" ng-submit="saveProject()">
+	      <md-input-container class="md-block">
+	        <label>Project Name</label>
+	        <input required name="name" ng-model="projectData.name" id="pname">
+	        <div ng-messages="projectForm.name.$error">
+	          <div ng-message="required">This is required.</div>
+	        </div>
+	      </md-input-container>
+	      <md-button class="md-raised md-primary pull-right" ng-click="saveProject()">{{authkey!='' ? 'Update':'Save'}}</md-button>
+	      <md-button class="md-raised pull-right" href="projects">Cancel</md-button>
+	      <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+	    </form>
+	</md-content>
+</div>

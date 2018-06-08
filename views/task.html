@@ -1,0 +1,16 @@
+<div layout="column">
+	<md-content layout-padding>
+	    <form name="taskForm" ng-submit="saveTask()">
+	      <md-input-container class="md-block">
+	        <label>Task Name</label>
+	        <input required name="name" ng-model="taskData.name" id="pname">
+	        <div ng-messages="taskForm.name.$error">
+	          <div ng-message="required">This is required.</div>
+	        </div>
+	      </md-input-container>
+	      <md-button class="md-raised md-primary pull-right" ng-click="saveTask()">{{authkey!='' ? 'Update':'Save'}}</md-button>
+	      <md-button class="md-raised pull-right" href="tasks/{{taskData.project_authkey}}">Cancel</md-button>
+	      <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+	    </form>
+	</md-content>
+</div>

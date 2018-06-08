@@ -1,0 +1,28 @@
+<div layout-gt-sm="row" layout="column">
+	<div flex-gt-sm="100">
+		<md-toolbar layout="row" class="md-hue-3">
+		  	<div class="md-toolbar-tools">
+		    	<span>Projects</span>
+		    	<md-button class="md-raised md-fab md-mini pull-right mt-10" aria-label="Use Android" href="project" ng-click="null">
+		    		<md-icon class="material-icons">add</md-icon>
+		    	</md-button>
+		  	</div>
+		</md-toolbar>
+
+		<md-content>
+		  	<md-list>
+			    <md-list-item class="md-1-line" ng-repeat="(key, project) in projects" ng-click="null" href="tasks/{{project.authkey}}">
+			      	<div class="md-list-item-text" layout="column">
+			        	{{project.name}}
+			      	</div>
+			      	<i class="md-secondary material-icons" ng-click="null" href="project/{{project.authkey}}" aria-label="edit">edit</i>
+    				<i class="md-secondary material-icons" ng-click="deleteProject($event, project.authkey, key)" aria-label="delete">delete</i>
+			    </md-list-item>
+			    <md-list-item ng-if="projects.length<1">
+			        Projects not found.
+			    </md-list-item>
+			    <md-divider></md-divider>
+		  	</md-list>
+		</md-content>
+	</div>
+</div>

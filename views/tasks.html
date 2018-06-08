@@ -1,0 +1,32 @@
+<div layout-gt-sm="row" layout="column">
+	<div flex-gt-sm="100">
+		<section layout-align="left left">
+			<md-button class="md-raised" href="projects"><< Back</md-button>
+		</section>
+		<md-toolbar layout="row" class="md-hue-3">
+		  	<div class="md-toolbar-tools">
+		    	<span>Tasks</span>
+		    	<md-button class="md-raised md-fab md-mini pull-right mt-10" aria-label="Use Android" href="task/{{project_authkey}}" ng-click="null">
+		    		<md-icon class="material-icons">add</md-icon>
+		    	</md-button>
+		  	</div>
+		</md-toolbar>
+
+		<md-content>
+		  	<md-list>
+			    <md-list-item class="md-1-line" ng-repeat="(key, task) in tasks" ng-click="null">
+			      	<div class="md-list-item-text" layout="column">
+			        	{{task.name}}
+			      	</div>
+    				<i class="md-secondary material-icons" ng-click="commentTask($event, task.authkey, key)" aria-label="comment" title="comment">comment</i>
+			      	<i class="md-secondary material-icons" ng-click="null" href="task/{{project_authkey}}/{{task.authkey}}" aria-label="edit" title="edit">edit</i>
+    				<i class="md-secondary material-icons" ng-click="deleteTask($event, task.authkey, key)" aria-label="delete" title="delete">delete</i>
+			    </md-list-item>
+			    <md-list-item ng-if="tasks.length<1">
+			        Task not found.
+			    </md-list-item>
+			    <md-divider></md-divider>
+		  	</md-list>
+		</md-content>
+	</div>
+</div>
